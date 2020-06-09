@@ -24,7 +24,7 @@
     display: flex;
     justify-content: space-evenly;
 }
-.column{
+.tile{
     display: flex;
     align-items: center;
     justify-content: center;

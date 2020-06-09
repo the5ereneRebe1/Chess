@@ -22,7 +22,7 @@ for(let i=0;i<8;i++){
     row.setAttribute('class','row');
     for(let j=0;j<8;j++){
         let column = document.createElement('div');
-        column.setAttribute('class','column');
+        column.setAttribute('class','tile');
         column.setAttribute('id',i+' '+j);
        
         if(cells[i][j]){
@@ -95,7 +95,7 @@ function dragOver(event){
 }
 function dropPiece(event){
     event.preventDefault();
-    if(event.target.className = "column"){
+    if(event.target.className = "tile"){
         
         let data = event.dataTransfer.getData("text");
         console.log(event.target.id+"  "+data);
